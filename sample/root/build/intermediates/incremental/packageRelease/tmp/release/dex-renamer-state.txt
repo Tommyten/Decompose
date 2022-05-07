@@ -1,7 +1,0 @@
-#Wed Apr 06 22:44:08 BST 2022
-base.1=/home/arkivanov/dev/workspace/Decompose/sample/counter/app-android/build/intermediates/dex/release/mergeDexRelease/classes2.dex
-path.1=classes2.dex
-base.0=/home/arkivanov/dev/workspace/Decompose/sample/counter/app-android/build/intermediates/dex/release/mergeDexRelease/classes.dex
-renamed.1=classes2.dex
-renamed.0=classes.dex
-path.0=classes.dex

@@ -1,0 +1,8 @@
+builtins_platform=JS
+unique_name=Decompose.sample\:shared
+compiler_version=1.6.10
+depends=Decompose\:decompose Essenty\:lifecycle Essenty\:state-keeper Essenty\:instance-keeper Essenty\:back-pressed Essenty\:parcelable Essenty\:utils-internal com.badoo.reaktive\:reaktive org.jetbrains.kotlin-wrappers\:kotlin-emotion org.jetbrains.kotlin-wrappers\:kotlin-mui org.jetbrains.kotlin-wrappers\:kotlin-react org.jetbrains.kotlin-wrappers\:kotlin-styled org.jetbrains.kotlin-wrappers\:kotlin-react-dom-legacy org.jetbrains.kotlin-wrappers\:kotlin-react-dom org.jetbrains.kotlin-wrappers\:kotlin-react-legacy org.jetbrains.kotlin-wrappers\:kotlin-react-core org.jetbrains.kotlin-wrappers\:kotlin-csstype org.jetbrains.kotlin-wrappers\:kotlin-popper org.jetbrains.kotlin-wrappers\:kotlin-extensions org.jetbrains.kotlinx\:kotlinx-html com.badoo.reaktive\:utils com.badoo.reaktive\:reaktive-annotations org.jetbrains.kotlin-wrappers\:kotlin-css kotlin
+jsOutputName=Decompose-shared
+abi_version=1.6.0
+metadata_version=1.4.1
+ir_version=1.0.0

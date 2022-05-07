@@ -1,0 +1,2 @@
+
+<Decompose.sample:shared>:com.arkivanov.sample.shared:$com.arkivanov.sample.shared.counters:,com.arkivanov.sample.shared.counters.counter:%com.arkivanov.sample.shared.multipane:.com.arkivanov.sample.shared.multipane.database:-com.arkivanov.sample.shared.multipane.details:*com.arkivanov.sample.shared.multipane.list:+com.arkivanov.sample.shared.multipane.utils: com.arkivanov.sample.shared.root

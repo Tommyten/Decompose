@@ -1,14 +1,14 @@
-package com.arkivanov.sample.counter.app
+package com.arkivanov.sample.app
 
 import com.arkivanov.decompose.DefaultComponentContext
+import com.arkivanov.decompose.router.webhistory.DefaultWebHistoryController
 import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
 import com.arkivanov.essenty.lifecycle.stop
-import com.arkivanov.sample.shared.counters.CountersComponent
-import com.arkivanov.sample.shared.counters.CountersContent
+import com.arkivanov.sample.shared.root.RootComponent
+import com.arkivanov.sample.shared.root.RootContent
 import kotlinx.browser.document
-import mui.material.Container
-import mui.system.Breakpoint
+import kotlinx.browser.window
 import org.w3c.dom.Document
 import react.create
 import react.dom.client.createRoot
@@ -16,31 +16,18 @@ import react.dom.client.createRoot
 fun main() {
     val lifecycle = LifecycleRegistry()
 
-//    val root =
-//        RootComponent(
-//            componentContext = DefaultComponentContext(lifecycle = lifecycle),
-//            deepLink = RootComponent.DeepLink.Web(path = window.location.pathname),
-//            webHistoryController = DefaultWebHistoryController(),
-//        )
-
     val root =
-        CountersComponent(
+        RootComponent(
             componentContext = DefaultComponentContext(lifecycle = lifecycle),
+            deepLink = RootComponent.DeepLink.Web(path = window.location.pathname),
+            webHistoryController = DefaultWebHistoryController(),
         )
 
     lifecycle.attachToDocument()
 
     createRoot(document.getElementById("app")!!).render(
-        Container.create {
-            maxWidth = Breakpoint.sm
-
-//            RootR {
-//                component = root
-//            }
-
-            CountersContent {
-                component = root
-            }
+        RootContent.create {
+            component = root
         }
     )
 }

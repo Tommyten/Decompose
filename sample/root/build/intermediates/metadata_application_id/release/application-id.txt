@@ -1,1 +1,0 @@
-com.arkivanov.counter.app

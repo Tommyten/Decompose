@@ -9,7 +9,7 @@ setupJsApp {
 
 dependencies {
     implementation(project(":decompose"))
-    implementation(project(":sample:shared:counter"))
+    implementation(project(":sample:shared"))
     implementation(project.dependencies.enforcedPlatform(deps.jetbrains.kotlinWrappers.kotlinWrappersBom.get()))
     implementation("org.jetbrains.kotlin-wrappers:kotlin-react")
     implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom")

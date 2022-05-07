@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+drawable border
+drawable ic_one
+drawable ic_three
+drawable ic_two
+id button_next
+id button_prev
+id navigation_view
+id router
+id router_first
+id router_second
+id tab_counters
+id tab_dynamic_features
+id tab_multipane
+id text_count
+id text_title
+layout counter
+layout counters
+layout root
+menu root_tabs

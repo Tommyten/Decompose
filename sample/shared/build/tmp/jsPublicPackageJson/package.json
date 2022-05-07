@@ -1,0 +1,11 @@
+{
+  "name": "Decompose-shared",
+  "version": "0.0.0-unspecified",
+  "main": "Decompose-shared.js",
+  "types": "Decompose-shared.d.ts",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
