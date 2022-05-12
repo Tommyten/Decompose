@@ -13,6 +13,7 @@ import com.arkivanov.decompose.extensions.android.DefaultViewContext
 import com.arkivanov.decompose.extensions.android.child
 import com.arkivanov.essenty.lifecycle.essentyLifecycle
 import com.arkivanov.sample.app.ui.ComposeAppTheme
+import com.arkivanov.sample.shared.dynamicfeatures.dynamicfeature.DefaultFeatureInstaller
 import com.arkivanov.sample.shared.root.Root
 import com.arkivanov.sample.shared.root.RootComponent
 import com.arkivanov.sample.shared.root.RootContent
@@ -25,7 +26,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val root = RootComponent(defaultComponentContext())
+        val root =
+            RootComponent(
+                componentContext = defaultComponentContext(),
+                featureInstaller = DefaultFeatureInstaller(context = this),
+            )
 
         when (mode) {
             Mode.COMPOSE -> drawViaCompose(root)

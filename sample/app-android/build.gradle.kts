@@ -18,13 +18,16 @@ android {
     packagingOptions {
         exclude("META-INF/*")
     }
+
+    dynamicFeatures.add(":sample:shared:dynamic-features:feature1Impl")
+    dynamicFeatures.add(":sample:shared:dynamic-features:feature2Impl")
 }
 
 dependencies {
     implementation(project(":decompose"))
     implementation(project(":extensions-android"))
-    implementation(project(":sample:shared"))
-    implementation(project(":sample:shared-compose"))
+    implementation(project(":sample:shared:shared"))
+    implementation(project(":sample:shared:compose"))
     implementation(compose.runtime)
     implementation(compose.foundation)
     implementation(compose.material)

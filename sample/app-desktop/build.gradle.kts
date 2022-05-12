@@ -21,8 +21,8 @@ kotlin {
             dependencies {
                 implementation(project(":decompose"))
                 implementation(project(":extensions-compose-jetbrains"))
-                implementation(project(":sample:shared"))
-                implementation(project(":sample:shared-compose"))
+                implementation(project(":sample:shared:shared"))
+                implementation(project(":sample:shared:compose"))
                 implementation(compose.desktop.currentOs)
             }
         }
